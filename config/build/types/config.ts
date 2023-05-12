@@ -10,3 +10,10 @@ export interface BuildPaths {
     output: string;
     html: string;
 }
+
+export interface BuildOptions {
+    paths: BuildPaths;
+    mode: BuildMode;
+    port: number;
+    isDev: boolean;
+}
