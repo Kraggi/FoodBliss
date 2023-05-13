@@ -1,3 +1,3 @@
-import { sum } from "./test";
+import { sum } from './test';
 
 console.log(sum(1, 10));
