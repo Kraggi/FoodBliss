@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
-import './styles/index.scss';
-import { App } from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from './theme/themeProvider';
+import { ThemeProvider } from 'app/providers/ThemeProvider';
+import { App } from 'app/App';
+import './app/styles/index.scss';
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>

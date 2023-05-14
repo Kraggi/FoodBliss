@@ -1,8 +1,8 @@
-import { Link, Route, Routes } from 'react-router-dom';
-import { MainPage } from './pages/MainPage/MainPage.lazy';
-import { ProductPage } from './pages/ProductPage/ProductPage.lazy';
 import { Suspense } from 'react';
-import { UseTheme } from './theme/useTheme';
+import { Link, Route, Routes } from 'react-router-dom';
+import { UseTheme } from 'app/providers/ThemeProvider';
+import { MainPage } from 'pages/MainPage';
+import { ProductPage } from 'pages/ProductPage';
 import cn from 'classnames';
 
 export const App = () => {
