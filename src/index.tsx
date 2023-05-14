@@ -1,10 +1,13 @@
 import { createRoot } from 'react-dom/client';
-import './index.scss';
+import './styles/index.scss';
 import { App } from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from './theme/themeProvider';
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <App />
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
     </BrowserRouter>
 );
